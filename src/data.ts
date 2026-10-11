@@ -31,31 +31,43 @@ export const reviews = [
     id: "1",
     rating: 4,
     content: "This game is amazing",
+    author_id: "1",
+    game_id: "1",
   },
   {
     id: "2",
     rating: 5,
     content: "This game is awesome",
+    author_id: "2",
+    game_id: "2",
   },
   {
     id: "3",
     rating: 3,
     content: "This game is okay",
+    author_id: "3",
+    game_id: "3",
   },
   {
     id: "4",
     rating: 2,
     content: "This game is not so good",
+    author_id: "4",
+    game_id: "4",
   },
   {
     id: "5",
     rating: 1,
     content: "This game is terrible",
+    author_id: "1",
+    game_id: "5",
   },
   {
     id: "6",
     rating: 4,
     content: "This game is amazing",
+    author_id: "2",
+    game_id: "1",
   },
 ];
 export const authors = [
