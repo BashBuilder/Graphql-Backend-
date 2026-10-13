@@ -1,1 +1,1 @@
-# Graphql-Backend-
+# A graphql backend project
