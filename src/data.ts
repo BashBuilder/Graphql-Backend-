@@ -1,4 +1,4 @@
-export const games = [
+export let games = [
   {
     id: "1",
     title: "Super Mario Bros",
@@ -26,7 +26,7 @@ export const games = [
   },
 ];
 
-export const reviews = [
+export let reviews = [
   {
     id: "1",
     rating: 4,
@@ -70,7 +70,7 @@ export const reviews = [
     game_id: "1",
   },
 ];
-export const authors = [
+export let authors = [
   {
     id: "1",
     name: "Mario",

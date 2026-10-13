@@ -36,6 +36,25 @@ const resolvers = {
       return db.authors.find((author) => author.id === parent.author_id);
     },
   },
+  Mutation: {
+    deleteGame: (_parent: any, args: { id: string }) => {
+      const game = db.games.find((game) => game.id === args.id);
+      if (!game) {
+        throw new Error("Game not found");
+      }
+      return db.games.filter((game) => game.id !== args.id);
+    },
+    addGame: (_parent: any, args: { title: string; platfrom: string[] }) => {
+      const game = {
+        id: db.games.length + 1 + "",
+        title: args.title,
+        platfrom: args.platfrom,
+        reviews: [],
+      };
+      return game;
+      // db.games.push(game);
+    },
+  },
 };
 
 const server = new ApolloServer({
